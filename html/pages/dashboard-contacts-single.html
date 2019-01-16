@@ -1,0 +1,433 @@
+---
+layout: default
+title: Single Contact
+---
+
+<!-- Main dashboard container -->
+<div id="dashboard-wrapper" class="columns">
+    <div class="column is-hidden-mobile"></div>
+    <div id="single-contact-wrapper" class="content column is-11">
+
+        <!-- Dashboard Wrapper -->
+        <div class="dashboard-wrapper">
+
+            <div class="columns">
+                <div class="column">
+                    <!-- Main content -->
+                    <div id="main-dashboard" class="section-wrapper">
+                        <!-- Dashboard content -->
+                        <div id="contacts-layout" class="columns dashboard-columns">
+
+                            <div class="column is-10 is-offset-1">
+                                <!-- Page title -->
+                                <div class="contacts-title-wrapper">
+                                    <h3 class="contacts-title">
+                                        <a href="#">Contacts</a>
+                                        <i class="material-icons  is-hidden-mobile">keyboard_arrow_right</i>
+                                        <span class="is-hidden-mobile">Josh Barker</span>
+                                    </h3>
+                                    <!-- Filter input -->
+                                    <div class="list-filter">
+                                        <div class="dropdown is-right dropdown-trigger contact-events-dropdown">
+                                            <div class="button">
+                                                <i class="material-icons">more_vert</i>
+                                            </div>
+                                            <!-- Dropdown menu -->
+                                            <div class="dropdown-menu is-text-bigger" role="menu">
+                                                <div class="dropdown-content">
+                                                    <a href="#" class="dropdown-item">
+                                                        <i class="sl sl-icon-paper-plane"></i>
+                                                        <span>
+                                                            <span>Send</span>
+                                                            <span>Send contact details</span>
+                                                        </span>
+                                                    </a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="dropdown-item">
+                                                        <i class="sl sl-icon-rocket"></i>
+                                                        <span>
+                                                            <span>New Deal</span>
+                                                            <span>Start new deal involving this contact</span>
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="dropdown-item">
+                                                        <i class="sl sl-icon-bell"></i>
+                                                        <span>
+                                                            <span>Subscribe me</span>
+                                                            <span>Subscribe me to contact updates</span>
+                                                        </span>
+                                                    </a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item">
+                                                        <i class="sl sl-icon-shield"></i>
+                                                        <span>
+                                                            <span>Disable</span>
+                                                            <span>Disables this contact</span>
+                                                        </span>
+                                                    </a>
+                                                    <a class="dropdown-item">
+                                                        <i class="sl sl-icon-trash"></i>
+                                                        <span>
+                                                            <span>Delete</span>
+                                                            <span>Delete this event</span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Edit button -->
+                                        <a class="button btn-dash primary-btn btn-dash raised ripple has-icon" data-ripple-color="">
+                                            <i class="material-icons">short_text</i>
+                                            Edit Contact
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="columns">
+                                    <!-- Avatar Card -->
+                                    <div class="column is-4">
+                                        <div class="flex-card is-avatar light-bordered card-overflow">
+                                            <div class="inner">
+                                                <div class="contact-block">
+                                                    <!-- Avatar -->
+                                                    <div class="avatar-wrapper">
+                                                        <img src="https://via.placeholder.com/150x150" alt=""
+                                                            data-demo-src="assets/images/avatars/nick.jpg">
+                                                    </div>
+                                                    <!-- Meta -->
+                                                    <div class="contact-name">Josh Barker</div>
+                                                    <div class="contact-company">Multicorp Inc.</div>
+                                                    <!-- Stats -->
+                                                    <div class="stats-block">
+                                                        <div class="stat">
+                                                            <span>Deals</span>
+                                                            <span>24</span>
+                                                        </div>
+                                                        <div class="stat">
+                                                            <span>Won</span>
+                                                            <span>17</span>
+                                                        </div>
+                                                        <div class="stat">
+                                                            <span>Lost</span>
+                                                            <span>7</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="column is-8">
+                                        <!-- Contact informations -->
+                                        <div class="flex-card is-contact-info light-bordered card-overflow">
+                                            <!-- Tabs -->
+                                            <div class="navigation-tabs single-contact-tabs animated-tabs simple-tabs">
+                                                <div class="tabs">
+                                                    <ul>
+                                                        <li class="is-active" data-tab="tab-general"><a>General</a></li>
+                                                        <li data-tab="tab-events"><a>Events</a></li>
+                                                        <li data-tab="tab-calls"><a>Calls</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <!-- General informations -->
+                                                <div id="tab-general" class="navtab-content is-active">
+                                                    <div class="columns">
+                                                        <div class="column is-6">
+                                                            <!-- Info block -->
+                                                            <div class="info-block">
+                                                                <div class="info-label">
+                                                                    Email
+                                                                </div>
+                                                                <div class="info-content is-email">
+                                                                    jbarker@multicorp.co
+                                                                </div>
+                                                            </div>
+                                                            <!-- Info block -->
+                                                            <div class="info-block">
+                                                                <div class="info-label">
+                                                                    Phone (1)
+                                                                </div>
+                                                                <div class="info-content">
+                                                                    +1 555 28 354
+                                                                </div>
+                                                            </div>
+                                                            <!-- Info block -->
+                                                            <div class="info-block">
+                                                                <div class="info-label">
+                                                                    Company
+                                                                </div>
+                                                                <div class="info-content">
+                                                                    Multicorp Inc.
+                                                                </div>
+                                                            </div>
+                                                            <!-- Info block -->
+                                                            <div class="info-block">
+                                                                <div class="info-label">
+                                                                    Position
+                                                                </div>
+                                                                <div class="info-content">
+                                                                    HR Manager
+                                                                </div>
+                                                            </div>
+                                                            <!-- Info block -->
+                                                            <div class="info-block">
+                                                                <div class="info-label">
+                                                                    Location
+                                                                </div>
+                                                                <div class="info-content">
+                                                                    New York, USA
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="column is-6">
+                                                            <!-- Contact summary -->
+                                                            <div class="info-block">
+                                                                <div class="info-label">
+                                                                    Quick Summary
+                                                                </div>
+                                                                <div class="info-content is-notes">
+                                                                    Lorem ipsum dolor sit amet, ad blandit intellegam cum, nulla legere possit id vim, clita nullam graecis duo ne.
+                                                                </div>
+                                                                <!-- Switch -->
+                                                                <div class="field is-prospect">
+                                                                    <input id="prospectSwitch" type="checkbox" name="prospectSwitch" class="switch is-secondary" checked>
+                                                                    <label for="prospectSwitch"><span>This contact is a prospect</span></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <hr>
+                                                    
+                                                    <!-- Lifetime earnings -->
+                                                    <div class="lifetime-wrapper">
+                                                        <div class="lifetime-won">
+                                                            <div class="lifetime-label">Lifetime Earnings</div>
+                                                            <span>20,453.76</span>
+                                                        </div>
+                                                        
+                                                        <!-- Send email action -->
+                                                        <a class="button btn-dash secondary-btn btn-dash raised ripple has-icon modal-trigger" data-ripple-color="" data-modal="message-contact-modal">
+                                                            <i class="material-icons">mail</i>
+                                                            Message
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Events -->
+                                                <div id="tab-events" class="navtab-content">
+                                                    <div class="columns">
+                                                        <div class="column">
+                                                            <!-- Event block -->
+                                                            <div class="event-block">
+                                                                <div class="date-block">
+                                                                    <span>18</span>
+                                                                    <span>Oct</span>
+                                                                </div>
+                                                                <!-- Event meta -->
+                                                                <div class="event-meta">
+                                                                    <span class="event-name">
+                                                                        Presentation of our latest release.
+                                                                    </span>
+                                                                    <span class="meta">
+                                                                        <span class="meta-element">
+                                                                            <i class="sl sl-icon-location"></i>
+                                                                            <span>Customer's Office</span>
+                                                                        </span>
+                                                                        <span class="meta-element">
+                                                                            <i class="sl sl-icon-clock"></i>
+                                                                            <span>10:30am</span>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                                <!-- Dropdown -->
+                                                                {{> contact-events-dropdown}}
+                                                            </div>
+                                                            
+                                                            <!-- Event block -->
+                                                            <div class="event-block is-disabled">
+                                                                <div class="date-block">
+                                                                    <span>03</span>
+                                                                    <span>Oct</span>
+                                                                </div>
+                                                                <!-- Event meta -->
+                                                                <div class="event-meta">
+                                                                    <span class="event-name">
+                                                                        Conference call with company board.
+                                                                    </span>
+                                                                    <span class="meta">
+                                                                        <span class="meta-element">
+                                                                            <i class="sl sl-icon-location"></i>
+                                                                            <span>Here</span>
+                                                                        </span>
+                                                                        <span class="meta-element">
+                                                                            <i class="sl sl-icon-clock"></i>
+                                                                            <span>15:00pm</span>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                                <!-- Dropdown -->
+                                                                {{> contact-events-dropdown}}
+                                                            </div>
+                                                            
+                                                            <!-- Event block -->
+                                                            <div class="event-block is-disabled">
+                                                                <div class="date-block">
+                                                                    <span>19</span>
+                                                                    <span>Sep</span>
+                                                                </div>
+                                                                <!-- Event meta -->
+                                                                <div class="event-meta">
+                                                                    <span class="event-name">
+                                                                        First meeting with prospect.
+                                                                    </span>
+                                                                    <span class="meta">
+                                                                        <span class="meta-element">
+                                                                            <i class="sl sl-icon-location"></i>
+                                                                            <span>Customer's Office</span>
+                                                                        </span>
+                                                                        <span class="meta-element">
+                                                                            <i class="sl sl-icon-clock"></i>
+                                                                            <span>09:00am</span>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                                <!-- Dropdown -->
+                                                                {{> contact-events-dropdown}}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /Events -->
+
+                                                <!-- Calls -->
+                                                <div id="tab-calls" class="navtab-content">
+                                                    <!-- Logged call -->
+                                                    <div class="single-toggle-wrapper is-phone-block is-inner">
+                                                        <div class="toggle-wrap">
+                                                            <span class="trigger">
+                                                                <a href="#">
+                                                                    <i class="fa fa-phone"></i> 
+                                                                    <small>oct 18, 2018</small>
+                                                                    <i class="im im-icon-Add"></i>
+                                                                </a>
+                                                            </span>
+                                                            <!-- Content -->
+                                                            <div class="toggle-container">
+                                                                <div class="meta-block">
+                                                                    <div class="call-label">Called at</div>
+                                                                    <div class="call-info">10:23AM</div>
+                                                                </div>
+                                                                <div class="meta-block">
+                                                                    <div class="call-label">Call Type</div>
+                                                                    <div class="call-info">Outgoing call</div>
+                                                                </div>
+                                                                <div class="meta-block">
+                                                                    <div class="call-label">Call Duration</div>
+                                                                    <div class="call-info">7 minutes</div>
+                                                                </div>
+                                                                <div class="meta-block">
+                                                                    <div class="call-label">Conversation abstract</div>
+                                                                    <div class="call-info is-conversation">Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Logged call -->
+                                                    <div class="single-toggle-wrapper is-phone-block is-outer">
+                                                        <div class="toggle-wrap">
+                                                            <span class="trigger">
+                                                                <a href="#">
+                                                                    <i class="fa fa-phone"></i> 
+                                                                    <small>oct 03, 2018</small>
+                                                                    <i class="im im-icon-Add"></i>
+                                                                </a>
+                                                            </span>
+                                                            <!-- Content -->
+                                                            <div class="toggle-container">
+                                                                <div class="meta-block">
+                                                                    <div class="call-label">Called at</div>
+                                                                    <div class="call-info">14:02PM</div>
+                                                                </div>
+                                                                <div class="meta-block">
+                                                                    <div class="call-label">Call Type</div>
+                                                                    <div class="call-info">Incoming call</div>
+                                                                </div>
+                                                                <div class="meta-block">
+                                                                    <div class="call-label">Call Duration</div>
+                                                                    <div class="call-info">3 minutes</div>
+                                                                </div>
+                                                                <div class="meta-block">
+                                                                    <div class="call-label">Conversation abstract</div>
+                                                                    <div class="call-info is-conversation">Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Logged call -->
+                                                    <div class="single-toggle-wrapper is-phone-block is-inner">
+                                                        <div class="toggle-wrap">
+                                                            <span class="trigger">
+                                                                <a href="#">
+                                                                    <i class="fa fa-phone"></i> 
+                                                                    <small>sep 21, 2018</small>
+                                                                    <i class="im im-icon-Add"></i>
+                                                                </a>
+                                                            </span>
+                                                            <!-- Content -->
+                                                            <div class="toggle-container">
+                                                                <div class="meta-block">
+                                                                    <div class="call-label">Called at</div>
+                                                                    <div class="call-info">12:11PM</div>
+                                                                </div>
+                                                                <div class="meta-block">
+                                                                    <div class="call-label">Call Type</div>
+                                                                    <div class="call-info">Outgoing call</div>
+                                                                </div>
+                                                                <div class="meta-block">
+                                                                    <div class="call-label">Call Duration</div>
+                                                                    <div class="call-info">14 minutes</div>
+                                                                </div>
+                                                                <div class="meta-block">
+                                                                    <div class="call-label">Conversation abstract</div>
+                                                                    <div class="call-info is-conversation">Lorem ipsum dolor sit amet, cu ius oratio appareat partiendo. Solet civibus nam te. Eu vel veri putent. Et suas reprimique adversarium duo, ex vel ridens graecis. Mel ipsum oratio voluptatum et.</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Log call action -->
+                                                    <div class="action-wrapper">
+                                                        <a class="button btn-dash secondary-btn btn-dash raised ripple modal-trigger" data-ripple-color="" data-modal="call-contact-modal">
+                                                            Log Call
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                                <!-- /Calls -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="column is-hidden-mobile"></div>
+</div>
+
+<!-- Send message modal -->
+{{> message-contact-modal}}
+<!-- Log call modal -->
+{{> call-contact-modal}}

@@ -1,0 +1,46 @@
+<!-- Profile wrapper -->
+<ul class="profile">
+    <li>
+        <!-- Profile avatar -->
+        <a class="profile-trigger" href="javascript:void(0);">
+            <img class="main-menu-avatar" src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/images/avatars/helen.jpg">
+            <span class="dot"></span>
+        </a>
+        <!-- /Profile avatar -->
+
+        <!-- Profile avatar -->
+        <div class="fab js-hamburger">
+            <!-- Profile page wrapper -->
+            <div class="profile-container">
+                <div class="inner">
+                    <div class="container is-fluid">
+
+                        {{> profile-cover}}
+
+                        <!-- Profile Sections -->
+                        <div class="container">
+                            <div class="columns">
+                                <div class="column is-10 is-offset-1">
+                                    <div class="profile-sections-wrapper">
+
+                                        {{> profile-details}}
+
+                                        {{> profile-team}}
+
+                                        {{> profile-notifications}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Profile Sections -->
+                    </div>
+                </div>
+            </div>
+            <!-- Profile page wrapper -->
+            <div class="fab__ripple"></div>
+            <div class="hamburger"></div>
+        </div>
+        <!-- Profile avatar -->
+    </li>
+</ul>
+<!-- /Profile wrapper -->

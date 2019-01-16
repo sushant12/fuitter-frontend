@@ -1,0 +1,689 @@
+---
+layout: minimal
+title: Support Tickets
+---
+
+<!-- Main dashboard container -->
+<div id="dashboard-wrapper" class="columns">
+    <div class="column"></div>
+    <div class="column is-11">
+
+        <!-- Dashboard Wrapper -->
+        <div id="support-tickets" class="dashboard-wrapper">
+
+            <div class="columns">
+                <div class="column">
+                    <!-- Main content -->
+                    <div id="main-dashboard" class="section-wrapper">
+                        <!-- Dashboard content -->
+                        <div id="support-layout" class="columns dashboard-columns">
+
+                            <div class="column is-12">
+                                <!-- Page title -->
+                                <div class="support-title-wrapper is-mobile">
+                                    <img class="support-image" src="https://via.placeholder.com/150x150" alt=""
+                                        data-demo-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJbbHqPh6pUzla6bf2punOireIBvRAFRuGdJSj0523UFr38TjZw">
+                                    <div class="inner-wrap">
+                                        <h3 class="support-title">Tickets</h3>
+                                        <div class="title-meta">
+                                            <div class="meta">
+                                                <i class="sl sl-icon-tag"></i>
+                                                <span>5 open</span>
+                                            </div>
+                                            <div class="meta">
+                                                <i class="sl sl-icon-shield"></i>
+                                                <span>1 escalated</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Actions -->
+                                    <div class="actions">
+                                        <div class="activity-button quickview-trigger" data-quickview="support-activity-quickview">
+                                            <i class="sl sl-icon-energy"></i>
+                                        </div>
+                                        <!-- Dropdown -->
+                                        {{> support-dashboard-dropdown}}
+                                    </div>
+                                </div>
+
+                                <!-- Support tickets -->
+                                <div class="support-tickets">
+                                    <div class="flex-card is-ticket-list light-bordered">
+                                        <!-- Contacts table -->
+                                        <table class="table tickets-table">
+                                            <!-- Table header -->
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <div class="b-checkbox is-secondary">
+                                                            <input id="checkbox-docs-all" class="styled" type="checkbox">
+                                                            <label for="checkbox-docs-all"></label>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <!-- Filter dropdown -->
+                                                        <div class="dropdown filter-dropdown dropdown-trigger">
+                                                            <div class="button">
+                                                                <span>ID</span>
+                                                                <i class="material-icons">keyboard_arrow_down</i>
+                                                            </div>
+                                                            <div class="dropdown-menu" role="menu">
+                                                                <div class="dropdown-content">
+                                                                    <div class="dropdown-item filter-title">
+                                                                        Order
+                                                                    </div>
+                                                                    <a href="#" class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Ascending</span>
+                                                                    </a>
+                                                                    <a class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Descending</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th class="w-35">
+                                                        <!-- Filter dropdown -->
+                                                        <div class="dropdown filter-dropdown dropdown-trigger">
+                                                            <div class="button">
+                                                                <span>Name</span>
+                                                                <i class="material-icons">keyboard_arrow_down</i>
+                                                            </div>
+                                                            <div class="dropdown-menu" role="menu">
+                                                                <div class="dropdown-content">
+                                                                    <div class="dropdown-item filter-title">
+                                                                        Order
+                                                                    </div>
+                                                                    <a href="#" class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Ascending</span>
+                                                                    </a>
+                                                                    <a class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Descending</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <!-- Filter dropdown -->
+                                                        <div class="dropdown filter-dropdown dropdown-trigger">
+                                                            <div class="button">
+                                                                <span>Priority</span>
+                                                                <i class="material-icons">keyboard_arrow_down</i>
+                                                            </div>
+                                                            <div class="dropdown-menu" role="menu">
+                                                                <div class="dropdown-content">
+                                                                    <div class="dropdown-item filter-title">
+                                                                        Labels
+                                                                    </div>
+                                                                    <a class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> All</span>
+                                                                    </a>
+                                                                    <a href="#" class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> High</span>
+                                                                    </a>
+                                                                    <a class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Medium</span>
+                                                                    </a>
+                                                                    <a class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Low</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <!-- Filter dropdown -->
+                                                        <div class="dropdown filter-dropdown dropdown-trigger">
+                                                            <div class="button">
+                                                                <span>Assignee</span>
+                                                                <i class="material-icons">keyboard_arrow_down</i>
+                                                            </div>
+                                                            <div class="dropdown-menu" role="menu">
+                                                                <div class="dropdown-content">
+                                                                    <div class="dropdown-item filter-title">
+                                                                        Order
+                                                                    </div>
+                                                                    <a href="#" class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Ascending</span>
+                                                                    </a>
+                                                                    <a class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Descending</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <!-- Filter dropdown -->
+                                                        <div class="dropdown filter-dropdown dropdown-trigger">
+                                                            <div class="button">
+                                                                <span>Modification</span>
+                                                                <i class="material-icons">keyboard_arrow_down</i>
+                                                            </div>
+                                                            <div class="dropdown-menu" role="menu">
+                                                                <div class="dropdown-content">
+                                                                    <div class="dropdown-item filter-title">
+                                                                        Order
+                                                                    </div>
+                                                                    <a href="javascript:void(0);" class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Ascending</span>
+                                                                    </a>
+                                                                    <a href="javascript:void(0);" class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Descending</span>
+                                                                    </a>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <div class="dropdown-item filter-title">
+                                                                        Display
+                                                                    </div>
+                                                                    <a href="javascript:void(0);" class="dropdown-item is-active">
+                                                                        <span><i class="fa fa-check"></i> Modification</span>
+                                                                    </a>
+                                                                    <a href="javascript:void(0);" class="dropdown-item is-disabled">
+                                                                        <span><i class="fa fa-check"></i> Status</span>
+                                                                    </a>
+                                                                    <a href="javascript:void(0);" class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Attachments</span>
+                                                                    </a>
+                                                                    <a href="javascript:void(0);" class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Severity</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <!-- Filter dropdown -->
+                                                        <div class="dropdown filter-dropdown dropdown-trigger">
+                                                            <div class="button">
+                                                                <span>Age</span>
+                                                                <i class="material-icons">keyboard_arrow_down</i>
+                                                            </div>
+                                                            <div class="dropdown-menu" role="menu">
+                                                                <div class="dropdown-content">
+                                                                    <div class="dropdown-item filter-title">
+                                                                        Order
+                                                                    </div>
+                                                                    <a href="#" class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Ascending</span>
+                                                                    </a>
+                                                                    <a class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Descending</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <!-- Filter dropdown -->
+                                                        <div class="dropdown filter-dropdown dropdown-trigger">
+                                                            <div class="button">
+                                                                <span>Status</span>
+                                                                <i class="material-icons">keyboard_arrow_down</i>
+                                                            </div>
+                                                            <div class="dropdown-menu" role="menu">
+                                                                <div class="dropdown-content">
+                                                                    <div class="dropdown-item filter-title">
+                                                                        Order
+                                                                    </div>
+                                                                    <a href="javascript:void(0);" class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Ascending</span>
+                                                                    </a>
+                                                                    <a href="javascript:void(0);" class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Descending</span>
+                                                                    </a>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <div class="dropdown-item filter-title">
+                                                                        Display
+                                                                    </div>
+                                                                    <a href="javascript:void(0);" class="dropdown-item is-disabled">
+                                                                        <span><i class="fa fa-check"></i> Modification</span>
+                                                                    </a>
+                                                                    <a href="javascript:void(0);" class="dropdown-item is-active">
+                                                                        <span><i class="fa fa-check"></i> Status</span>
+                                                                    </a>
+                                                                    <a href="javascript:void(0);" class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Attachments</span>
+                                                                    </a>
+                                                                    <a href="javascript:void(0);" class="dropdown-item">
+                                                                        <span><i class="fa fa-check"></i> Severity</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th class="w-5">
+                                                        <!-- Filter dropdown -->
+                                                        <div class="dropdown filter-dropdown is-right dropdown-trigger">
+                                                            <div class="button">
+                                                                <span class="material-icons">subject</span>
+                                                                <i class="material-icons">keyboard_arrow_down</i>
+                                                            </div>
+                                                            <div class="dropdown-menu" role="menu">
+                                                                <div class="dropdown-content">
+                                                                    <div class="dropdown-item filter-title">
+                                                                        View type
+                                                                    </div>
+                                                                    <a href="#" class="dropdown-item is-spaced is-active">
+                                                                        <span><i class="fa fa-check"></i> List view</span>
+                                                                        <i class="material-icons">view_list</i>
+                                                                    </a>
+                                                                    <a class="dropdown-item is-spaced">
+                                                                        <span><i class="fa fa-check"></i> Grid view</span>
+                                                                        <i class="material-icons">view_module</i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <!-- Table body -->
+                                            <tbody>
+                                                <!-- Table row -->
+                                                <tr>
+                                                    <td>
+                                                        <div class="b-checkbox is-secondary">
+                                                            <input id="checkbox-tickets-0" class="styled" type="checkbox">
+                                                            <label for="checkbox-tickets-0"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="ticket-id">
+                                                        TCK-0874
+                                                    </td>
+                                                    <td class="ticket-name">
+                                                        <span>Item forgotten after checking delivery content</span>
+                                                    </td>
+                                                    <td class="priority-type is-low">
+                                                        <div class="dot"></div>
+                                                    </td>
+                                                    <td class="assignee">
+                                                        <span class="inner">
+                                                            <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="assets/images/avatars/helen.jpg">
+                                                        </span>
+                                                    </td>
+                                                    <td class="modifications">
+                                                        <span><span class="date">--</span> <span class="time"></span></span>
+                                                        <span><small></small></span>
+                                                    </td>
+                                                    <td class="ticket-age">
+                                                        --
+                                                    </td>
+                                                    <td class="status is-new">
+                                                        <span class="inner">
+                                                            <span class="tag">New</span>
+                                                            <button type="button" class="button">Update</button>
+                                                        </span>
+                                                    </td>
+                                                    <td class="actions">
+                                                        {{> ticket-list-dropdown}}
+                                                        <a href="#" class="button is-hidden"><i class="material-icons">remove_red_eye</i></a>
+                                                    </td>
+                                                </tr>
+                                                <!-- Table row -->
+                                                <tr>
+                                                    <td>
+                                                        <div class="b-checkbox is-secondary">
+                                                            <input id="checkbox-tickets-1" class="styled" type="checkbox">
+                                                            <label for="checkbox-tickets-1"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="ticket-id">
+                                                        TCK-0873
+                                                    </td>
+                                                    <td class="ticket-name">
+                                                        <span>Problem with signup</span>
+                                                    </td>
+                                                    <td class="priority-type is-high">
+                                                        <div class="dot"></div>
+                                                    </td>
+                                                    <td class="assignee">
+                                                        <span class="inner">
+                                                            <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="assets/images/avatars/melany.jpg">
+                                                        </span>
+                                                    </td>
+                                                    <td class="modifications">
+                                                        <span><span class="date">--</span> <span class="time"></span></span>
+                                                        <span><small></small></span>
+                                                    </td>
+                                                    <td class="ticket-age">
+                                                        3 days
+                                                    </td>
+                                                    <td class="status is-escalated">
+                                                        <span class="inner">
+                                                            <span class="tag">Escalated</span>
+                                                            <button type="button" class="button">Update</button>
+                                                        </span>
+                                                    </td>
+                                                    <td class="actions">
+                                                        {{> ticket-list-dropdown}}
+                                                        <a href="#" class="button is-hidden"><i class="material-icons">remove_red_eye</i></a>
+                                                    </td>
+                                                </tr>
+                                                <!-- Table row -->
+                                                <tr>
+                                                    <td>
+                                                        <div class="b-checkbox is-secondary">
+                                                            <input id="checkbox-tickets-2" class="styled" type="checkbox">
+                                                            <label for="checkbox-tickets-2"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="ticket-id">
+                                                        TCK-0872
+                                                    </td>
+                                                    <td class="ticket-name">
+                                                        <span>Misdelivery of items not specified in order</span>
+                                                    </td>
+                                                    <td class="priority-type is-medium">
+                                                        <div class="dot"></div>
+                                                    </td>
+                                                    <td class="assignee">
+                                                        <span class="inner">
+                                                            <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="assets/images/avatars/ray.jpg">
+                                                        </span>
+                                                    </td>
+                                                    <td class="modifications">
+                                                        <span><span class="date">Dec 09</span>, <span class="time">02:55pm</span></span>
+                                                        <span><small>by Ray Donovan</small></span>
+                                                    </td>
+                                                    <td class="ticket-age">
+                                                        3 days
+                                                    </td>
+                                                    <td class="status is-open">
+                                                        <span class="inner">
+                                                            <span class="tag">Open</span>
+                                                            <button type="button" class="button">Update</button>
+                                                        </span>
+                                                    </td>
+                                                    <td class="actions">
+                                                        {{> ticket-list-dropdown}}
+                                                        <a href="#" class="button is-hidden"><i class="material-icons">remove_red_eye</i></a>
+                                                    </td>
+                                                </tr>
+                                                <!-- Table row -->
+                                                <tr>
+                                                    <td>
+                                                        <div class="b-checkbox is-secondary">
+                                                            <input id="checkbox-tickets-3" class="styled" type="checkbox">
+                                                            <label for="checkbox-tickets-3"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="ticket-id">
+                                                        TCK-0871
+                                                    </td>
+                                                    <td class="ticket-name">
+                                                        <span>Problem with order ORDER-855687</span>
+                                                    </td>
+                                                    <td class="priority-type is-low">
+                                                        <div class="dot"></div>
+                                                    </td>
+                                                    <td class="assignee">
+                                                        <span class="inner">
+                                                            <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="assets/images/avatars/ray.jpg">
+                                                        </span>
+                                                    </td>
+                                                    <td class="modifications">
+                                                        <span><span class="date">Dec 07</span>, <span class="time">09:12am</span></span>
+                                                        <span><small>by Ray Donovan</small></span>
+                                                    </td>
+                                                    <td class="ticket-age">
+                                                        5 days
+                                                    </td>
+                                                    <td class="status is-in-progress">
+                                                        <span class="inner">
+                                                            <span class="tag">in Progress</span>
+                                                            <button type="button" class="button">Update</button>
+                                                        </span>
+                                                    </td>
+                                                    <td class="actions">
+                                                        {{> ticket-list-dropdown}}
+                                                        <a href="#" class="button is-hidden"><i class="material-icons">remove_red_eye</i></a>
+                                                    </td>
+                                                </tr>
+                                                <!-- Table row -->
+                                                <tr>
+                                                    <td>
+                                                        <div class="b-checkbox is-secondary">
+                                                            <input id="checkbox-tickets-4" class="styled" type="checkbox">
+                                                            <label for="checkbox-tickets-4"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="ticket-id">
+                                                        TCK-0870
+                                                    </td>
+                                                    <td class="ticket-name">
+                                                        <span>I have been billed twice for the same order</span>
+                                                    </td>
+                                                    <td class="priority-type is-medium">
+                                                        <div class="dot"></div>
+                                                    </td>
+                                                    <td class="assignee">
+                                                        <span class="inner">
+                                                            <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="assets/images/avatars/lakisha.jpg">
+                                                        </span>
+                                                    </td>
+                                                    <td class="modifications">
+                                                        <span><span class="date">Dec 04</span>, <span class="time">11:03am</span></span>
+                                                        <span><small>by Lakisha Williams</small></span>
+                                                    </td>
+                                                    <td class="ticket-age">
+                                                        8 days
+                                                    </td>
+                                                    <td class="status is-in-progress">
+                                                        <span class="inner">
+                                                            <span class="tag">in Progress</span>
+                                                            <button type="button" class="button">Update</button>
+                                                        </span>
+                                                    </td>
+                                                    <td class="actions">
+                                                        {{> ticket-list-dropdown}}
+                                                        <a href="#" class="button is-hidden"><i class="material-icons">remove_red_eye</i></a>
+                                                    </td>
+                                                </tr>
+                                                <!-- Table row -->
+                                                <tr class="is-closed">
+                                                    <td>
+                                                        <div class="b-checkbox is-secondary">
+                                                            <input id="checkbox-tickets-5" class="styled" type="checkbox">
+                                                            <label for="checkbox-tickets-5"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="ticket-id">
+                                                        TCK-0869
+                                                    </td>
+                                                    <td class="ticket-name">
+                                                        <span>Problem with order ORDER-562659</span>
+                                                    </td>
+                                                    <td class="priority-type">
+                                                        <div class="dot"></div>
+                                                    </td>
+                                                    <td class="assignee">
+                                                        <span class="inner">
+                                                            <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="assets/images/avatars/alan.jpg">
+                                                        </span>
+                                                    </td>
+                                                    <td class="modifications">
+                                                        <span><span class="date">Dec 03</span>, <span class="time">10:32am</span></span>
+                                                        <span><small>by Alan Maynard</small></span>
+                                                    </td>
+                                                    <td class="ticket-age">
+                                                        --
+                                                    </td>
+                                                    <td class="status">
+                                                        <span class="inner">
+                                                            <span class="tag">Closed</span>
+                                                            <button type="button" class="button">Update</button>
+                                                        </span>
+                                                    </td>
+                                                    <td class="actions">
+                                                        {{> ticket-list-dropdown}}
+                                                        <a href="#" class="button is-hidden"><i class="material-icons">remove_red_eye</i></a>
+                                                    </td>
+                                                </tr>
+                                                <!-- Table row -->
+                                                <tr class="is-closed">
+                                                    <td>
+                                                        <div class="b-checkbox is-secondary">
+                                                            <input id="checkbox-tickets-6" class="styled" type="checkbox">
+                                                            <label for="checkbox-tickets-6"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="ticket-id">
+                                                        TCK-0868
+                                                    </td>
+                                                    <td class="ticket-name">
+                                                        <span>I received an incorrect invoice</span>
+                                                    </td>
+                                                    <td class="priority-type">
+                                                        <div class="dot"></div>
+                                                    </td>
+                                                    <td class="assignee">
+                                                        <span class="inner">
+                                                            <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="assets/images/avatars/sally.jpg">
+                                                        </span>
+                                                    </td>
+                                                    <td class="modifications">
+                                                        <span><span class="date">Nov 26</span>, <span class="time">01:25pm</span></span>
+                                                        <span><small>by Sally Jenkins</small></span>
+                                                    </td>
+                                                    <td class="ticket-age">
+                                                        --
+                                                    </td>
+                                                    <td class="status">
+                                                        <span class="inner">
+                                                            <span class="tag">Closed</span>
+                                                            <button type="button" class="button">Update</button>
+                                                        </span>
+                                                    </td>
+                                                    <td class="actions">
+                                                        {{> ticket-list-dropdown}}
+                                                        <a href="#" class="button is-hidden"><i class="material-icons">remove_red_eye</i></a>
+                                                    </td>
+                                                </tr>
+                                                <!-- Table row -->
+                                                <tr class="is-closed">
+                                                    <td>
+                                                        <div class="b-checkbox is-secondary">
+                                                            <input id="checkbox-tickets-7" class="styled" type="checkbox">
+                                                            <label for="checkbox-tickets-7"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="ticket-id">
+                                                        TCK-0867
+                                                    </td>
+                                                    <td class="ticket-name">
+                                                        <span>Iam unable to login to my account. Password recovery won't work either.</span>
+                                                    </td>
+                                                    <td class="priority-type">
+                                                        <div class="dot"></div>
+                                                    </td>
+                                                    <td class="assignee">
+                                                        <span class="inner">
+                                                            <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="assets/images/avatars/ray.jpg">
+                                                        </span>
+                                                    </td>
+                                                    <td class="modifications">
+                                                        <span><span class="date">Nov 25</span>, <span class="time">06:41pm</span></span>
+                                                        <span><small>by Ray Donovan</small></span>
+                                                    </td>
+                                                    <td class="ticket-age">
+                                                        --
+                                                    </td>
+                                                    <td class="status">
+                                                        <span class="inner">
+                                                            <span class="tag">Closed</span>
+                                                            <button type="button" class="button">Update</button>
+                                                        </span>
+                                                    </td>
+                                                    <td class="actions">
+                                                        {{> ticket-list-dropdown}}
+                                                        <a href="#" class="button is-hidden"><i class="material-icons">remove_red_eye</i></a>
+                                                    </td>
+                                                </tr>
+                                                <!-- Table row -->
+                                                <tr class="is-closed">
+                                                    <td>
+                                                        <div class="b-checkbox is-secondary">
+                                                            <input id="checkbox-tickets-8" class="styled" type="checkbox">
+                                                            <label for="checkbox-tickets-8"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="ticket-id">
+                                                        TCK-0866
+                                                    </td>
+                                                    <td class="ticket-name">
+                                                        <span>My account has been locked. Why?</span>
+                                                    </td>
+                                                    <td class="priority-type">
+                                                        <div class="dot"></div>
+                                                    </td>
+                                                    <td class="assignee">
+                                                        <span class="inner">
+                                                            <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="assets/images/avatars/helen.jpg">
+                                                        </span>
+                                                    </td>
+                                                    <td class="modifications">
+                                                        <span><span class="date">Nov 25</span>, <span class="time">10:02am</span></span>
+                                                        <span><small>by Helen Miller</small></span>
+                                                    </td>
+                                                    <td class="ticket-age">
+                                                        --
+                                                    </td>
+                                                    <td class="status">
+                                                        <span class="inner">
+                                                            <span class="tag">Closed</span>
+                                                            <button type="button" class="button">Update</button>
+                                                        </span>
+                                                    </td>
+                                                    <td class="actions">
+                                                        {{> ticket-list-dropdown}}
+                                                        <a href="#" class="button is-hidden"><i class="material-icons">remove_red_eye</i></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="support-pagination">
+                                        <a class="pagination-item">
+                                            <i class="material-icons">more_horiz</i>
+                                        </a>
+                                        <a class="pagination-item">
+                                            <i class="material-icons">keyboard_arrow_left</i>
+                                        </a>
+                                        <a class="pagination-item is-active">
+                                            <span>1</span>
+                                        </a>
+                                        <a class="pagination-item">
+                                            <span>2</span>
+                                        </a>
+                                        <a class="pagination-item">
+                                            <span>3</span>
+                                        </a>
+                                        <a class="pagination-item">
+                                            <i class="material-icons">keyboard_arrow_right</i>
+                                        </a>
+                                        <a class="pagination-item">
+                                            <i class="material-icons">more_horiz</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /Dashboard content -->
+                    </div>
+                    <!-- /Main content -->
+                </div>
+                <!-- /Main view -->
+            </div>
+        </div>
+        <!-- /Dashboard Wrapper -->
+    </div>
+    <div class="column">
+    </div>
+</div>
+<!-- Main dashboard container -->
+
+<!-- Activity sidebar -->
+{{> support-activity-sidebar}}

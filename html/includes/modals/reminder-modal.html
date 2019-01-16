@@ -1,0 +1,56 @@
+<!-- Reminder Modal -->
+<div id="add-reminder-modal" class="modal modal-sm modal-hero">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="flex-card simple-shadow">
+            <div class="card-body">
+                <div class="content">
+                    <h2 class="has-text-centered dark-text pb-20">New Reminder</h2>
+                    <!-- New reminder form -->
+                    <form>
+                        <div class="field mb-10">
+                            <label class="label dark-text font-w-500">Remind me before</label>
+                            <div class="control has-icons-right">
+                                <input data-toggle="datepicker" type="text" class="input is-medium" placeholder="select a date ...">
+                                <span class="icon is-right is-medium">
+                                    <i class="im im-icon-Calendar-4"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field mb-10">
+                            <div class="control has-icons-left">
+                                <input type="text" class="input timepicker-24 is-medium" placeholder="set time">
+                                <span class="icon is-left is-medium">
+                                    <i class="sl sl-icon-clock"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field mb-10">
+                            <label class="label dark-text font-w-500">Priority</label>
+                            <div class="control">
+                                <select class="chosen-select" data-placeholder="Select a priority">
+                                    <option label="Priority"></option>
+                                    <option>Low</option>
+                                    <option>Medium</option>
+                                    <option>High</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field mb-10">
+                            <label class="label dark-text font-w-500">Remind me what ?</label>
+                            <div class="control">
+                                <textarea class="textarea is-grow is-secondary-focus" rows="5" placeholder="Type something relevant ..."></textarea>
+                            </div>
+                        </div>
+                        <div class="has-text-right mt-30">
+                            <button type="submit" class="button btn-dash secondary-btn no-lh rounded is-fullwidth is-raised ripple">Create reminder</button>
+                        </div>
+                    </form>
+                    <!-- /New reminder form -->
+                </div>
+            </div>  
+        </div>
+    </div>
+    <button class="modal-close is-large is-hidden" aria-label="close"></button>
+</div>
+<!-- Reminder Modal -->
