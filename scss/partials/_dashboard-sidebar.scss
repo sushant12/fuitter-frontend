@@ -169,7 +169,7 @@ TABLE OF CONTENTS
     background:$secondary;
     border-right:1px solid #e5e5e5;
     position:fixed;
-    top:0;
+    top:65px;
     bottom:0;
     transform: translateX(-251px);
     // left:80px;
@@ -180,6 +180,7 @@ TABLE OF CONTENTS
     z-index:999;
     .child-menu-inner {
         height: 100%;
+        margin-top: 200px;
         ul li {
             min-height: 65px;
         }
