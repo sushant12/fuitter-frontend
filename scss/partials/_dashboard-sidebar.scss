@@ -180,9 +180,6 @@ TABLE OF CONTENTS
     z-index:999;
     .child-menu-inner {
         height: 100%;
-        ul li {
-            min-height: 65px;
-        }
         .main-logo-wrapper{
           margin-top: 50px;
           margin-bottom: 90px;
@@ -297,7 +294,7 @@ TABLE OF CONTENTS
         min-height: 10px !important;
     }
     li.have-children ul li a {
-        background-color: darken($secondary, 20%);
+        // background-color: darken($secondary, 20%);
         padding: 12px 25px 12px 62px;
         span {
             margin-left: auto;
@@ -308,8 +305,6 @@ TABLE OF CONTENTS
         }
     } 
     li.have-children ul li a:hover, li.have-children ul li.is-active a {
-        color: #fff;
-        background-color: darken($secondary, 25%);
         padding: 12px 25px 12px 62px;
     } 
     li.have-children, li {
@@ -334,6 +329,7 @@ TABLE OF CONTENTS
     }
 }
 &.is-dark {
+        margin-top: -16px;
         background: $sidebar;
         border-right:1px solid $sidebar;
         ul li a {
