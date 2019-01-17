@@ -56,3 +56,10 @@ $accent-box-shadow:  0 14px 26px -12px $accent-shadow-from, 0 4px 23px 0px $base
 .pageloader {
     background: $secondary !important;
 }
+
+.iframe_preview {
+  position: absolute;
+  left: 250px;
+  width: calc(100% - 250px);
+  height: 100%;
+}
