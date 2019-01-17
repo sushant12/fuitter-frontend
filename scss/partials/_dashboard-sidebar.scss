@@ -232,18 +232,18 @@ TABLE OF CONTENTS
         color: #fff;
     }
     .sidebar-menu li a:hover  {
-        background-color: darken($secondary, 5%);
+        background-color: darken($sidebar, 5%);
         padding: 20px 25px;
         text-decoration: none;
         color: #fff;
     }
     //Menu items with submenu items
     li.have-children.active {
-        background-color: darken($secondary, 5%);
+        background-color: darken($sidebar, 5%);
     }
     li.have-children ul {
         padding: 0;
-        background-color: darken($secondary, 10%);
+        background-color: darken($sidebar, 10%);
     } 
     li.have-children ul li {
         min-height: 10px !important;
