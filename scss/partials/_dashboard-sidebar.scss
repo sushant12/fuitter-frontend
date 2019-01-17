@@ -76,72 +76,72 @@ TABLE OF CONTENTS
 //                 color: $secondary; 
 //             }
 //         }
-//         //Sidebar logo
-//         .main-logo {
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             img {
-//                 width: 32px;
-//                 height: 32px;
-//                 margin-top: -5px;
-//                 transition: opacity .3s;
-//                 &:hover {
-//                     opacity: 0.8;
-//                 }
-//             }
-//         }
-//         //bottom profile avatar
-//         .profile {
-//             position:absolute;
-//             left:0;
-//             bottom:0;
-//             width: 100%;
-//             li {
-//                 display: flex;
-//                 align-items: center;
-//                 justify-content: center;
-//                 position: relative;
-//             }
-//             a {
-//                 position: relative;
-//                 z-index: 4;
-//             }
-//             //avatar
-//             .main-menu-avatar {
-//                 width: 48px;
-//                 height: 48px;
-//                 border-radius: 100px;
-//                 margin: 0 auto;
-//                 margin-bottom: 20px;
-//                 transform: scale(1);
-//                 transition: transform .4s;
-//                 //Scale out state
-//                 &.vanish {
-//                     transform: scale(0);
-//                 }
-//             }
-//             //Status indicator
-//             .dot {
-//                 position: absolute;
-//                 top: 1px;
-//                 right: 0;
-//                 width: 12px;
-//                 height: 12px;
-//                 border-radius: 100px;
-//                 background: $primary;
-//                 transform: scale(1);
-//                 transition: transform .4s;
-//                 //Scale out state
-//                 &.vanish {
-//                     transform: scale(0);
-//                 }
-//                 //Busy status color
-//                 &.is-busy {
-//                     background: $orange;
-//                 }
-//             }
-//         }
+        //Sidebar logo
+        // .main-logo {
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     img {
+        //         width: 32px;
+        //         height: 32px;
+        //         margin-top: -5px;
+        //         transition: opacity .3s;
+        //         &:hover {
+        //             opacity: 0.8;
+        //         }
+        //     }
+        // }
+        // //bottom profile avatar
+        // .profile {
+        //     position:absolute;
+        //     left:0;
+        //     bottom:0;
+        //     width: 100%;
+        //     li {
+        //         display: flex;
+        //         align-items: center;
+        //         justify-content: center;
+        //         position: relative;
+        //     }
+        //     a {
+        //         position: relative;
+        //         z-index: 4;
+        //     }
+        //     //avatar
+        //     .main-menu-avatar {
+        //         width: 48px;
+        //         height: 48px;
+        //         border-radius: 100px;
+        //         margin: 0 auto;
+        //         margin-bottom: 20px;
+        //         transform: scale(1);
+        //         transition: transform .4s;
+        //         //Scale out state
+        //         &.vanish {
+        //             transform: scale(0);
+        //         }
+        //     }
+        //     //Status indicator
+        //     .dot {
+        //         position: absolute;
+        //         top: 1px;
+        //         right: 0;
+        //         width: 12px;
+        //         height: 12px;
+        //         border-radius: 100px;
+        //         background: $primary;
+        //         transform: scale(1);
+        //         transition: transform .4s;
+        //         //Scale out state
+        //         &.vanish {
+        //             transform: scale(0);
+        //         }
+        //         //Busy status color
+        //         &.is-busy {
+        //             background: $orange;
+        //         }
+        //     }
+        // }
 //     }
 //     //Dark version of sidebar
 //     &.is-dark {
@@ -180,9 +180,57 @@ TABLE OF CONTENTS
     z-index:999;
     .child-menu-inner {
         height: 100%;
-        margin-top: 200px;
         ul li {
             min-height: 65px;
+        }
+        .main-logo-wrapper{
+          margin-top: 50px;
+          margin-bottom: 90px;
+        }
+        .main-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 32px;
+                height: 32px;
+                margin-top: -5px;
+                transition: opacity .3s;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        //bottom profile avatar
+        .profile {
+            position:absolute;
+            left:0;
+            top: 550px;
+            width: 100%;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+            a {
+                position: relative;
+                z-index: 4;
+            }
+            //avatar
+            .main-menu-avatar {
+                width: 48px;
+                height: 48px;
+                border-radius: 100px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                transform: scale(1);
+                transition: transform .4s;
+                //Scale out state
+                &.vanish {
+                    transform: scale(0);
+                }
+            }
         }
     }
     //Menu header
